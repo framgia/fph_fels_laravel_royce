@@ -12,3 +12,24 @@
   background-color: #fff;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
 }
+
+.activity-log {
+  padding:5px;
+  border-bottom: 0.5px solid black;
+}
+
+i.activity-log-history{
+  color:gray;
+}
+
+.profile-pic {
+  background:gray;
+  width:100%;
+  height:100%;
+}
+
+.profile-summary {
+  margin-top: 10px;
+  border-top: 0.5px solid black;
+  width: 100%;
+}

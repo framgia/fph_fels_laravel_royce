@@ -16,7 +16,7 @@ class CreateWordChoicesTable extends Migration
         Schema::create('word_choices', function (Blueprint $table) {
             $table->increments('id');
             $table->unsignedInteger('word_list_id');
-            $table->foreign('word_list_id')->references('id')->on('word_list');
+            $table->foreign('word_list_id')->references('id')->on('word_lists');
             $table->string('name');
             $table->boolean('correct');
             $table->timestamps();

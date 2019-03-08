@@ -16,7 +16,7 @@ class CreateWordListsTable extends Migration
         Schema::create('word_lists', function (Blueprint $table) {
             $table->increments('id');
             $table->unsignedInteger('category_id');
-            $table->foreign('category_id')->references('id')->on('category');
+            $table->foreign('category_id')->references('id')->on('categories');
             $table->string('name');
             $table->string('description');
             $table->timestamps();
